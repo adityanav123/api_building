@@ -1,0 +1,17 @@
+[package]
+name = "api_building"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "2.1.4", features = ["postgres", "r2d2"]}
+dotenv = "0.15.0"
+r2d2 = "0.8.10"
+serde = "1.0.197"
+serde_derive = "1.0.197"
+serde_json = "1.0.114"
+
+# web framework, helps to create API
+rocket = { version = "0.5.0", default-features = false, features = ["json"]}
